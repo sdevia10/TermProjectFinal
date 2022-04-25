@@ -1,0 +1,254 @@
+/* Declaration of constants */
+:root {
+  --mantisGreen: #7dc95e;
+  --russianGreen: #648767;
+  --silver: #bfc0c0;
+  --lightCyan: #cee7e6;
+}
+/*Remove margin from the sides of the wepage 
+and make it take the full page so we can put footer at bottom,
+position relative so the child elements can have positive absolute and base 
+its position according to the whole body*/
+html,
+body {
+  margin: 0;
+  height: 100%;
+  position: relative;
+}
+
+/*Change color of header to green*/
+.header {
+  /* position: fixed;
+  width: 100%; */
+  background-color: var(--mantisGreen);
+  display: flex;
+  /* position: fixed; */
+
+  /*Move elements to the borders (logo left - links right)*/
+  justify-content: space-between;
+
+  /*Add padding to header*/
+  padding: 7px 30px; /*= padding vertically, 40pc horizontal*/
+
+  /*Allow to create a second row if theres not enough space in the header*/
+  flex-wrap: wrap;
+
+  /*Making header absolute position so child elements can have relative size to this*/
+  /* position:absolute; */
+}
+/*Transform List items to inline*/
+.header-list {
+  /*Remove dots in list*/
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /*Show all list items in one line and centered*/
+  display: flex;
+  align-items: center;
+  /*Change properties of letters*/
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
+}
+
+/*Remove underline from link*/
+.header-list a {
+  text-decoration: none;
+  color: white;
+}
+
+/*Change colors of buttons when hover */
+.header-list a:hover {
+  text-decoration: none;
+  color: var(--russianGreen);
+}
+
+/*Separate buttons*/
+.header-list li {
+  margin: 7px;
+}
+
+/*Adjusting logo*/
+.header img {
+  /* width: 10px; */
+  height: 80px;
+  object-fit: scale-down;
+  margin: 0;
+  /* padding: 7px; */
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  line-height: 2;
+  /* padding: 3rem; */
+  color: #777;
+}
+/***********************************************/
+/* SECTION ABOUT */
+/***********************************************/
+
+.section-about {
+  /* height: 120rem;
+  width: 120rem; */
+  padding: 50px 0;
+  position: relative;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.15;
+  overflow: hidden;
+}
+
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.heading {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.heading-secondary,
+.heading-tertiary,
+.heading-quaternary {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.heading-secondary {
+  font-size: 52px;
+  margin-bottom: 12px;
+  color: var(--russianGreen);
+}
+
+.heading-tertiary {
+  font-size: 24px;
+  font-style: italic;
+  margin-bottom: 52px;
+  padding: 5px;
+  /* border-bottom: 3px solid #648767; */
+  display: inline-block;
+}
+
+.heading-tertiary::after {
+  content: "";
+  position: absolute;
+  background-color: #648767;
+  display: inline-block;
+  left: 50%;
+  top: 175px;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 3.5px;
+}
+
+.heading-quaternary {
+  font-size: 20px;
+  color: #648767;
+  margin-bottom: 24px;
+}
+
+.heading-quaternary-mb {
+  margin-bottom: 12px;
+}
+
+.text {
+  font-size: 20px;
+  color: #111;
+}
+
+.text:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.text-2 {
+  font-size: 14px;
+  color: #222;
+}
+
+.container {
+  display: flex;
+  gap: 24px;
+  transform: skew(-12deg);
+}
+
+.mision {
+  padding: 24px 32px;
+  width: 50%;
+  background-color: rgba(265, 265, 265, 0.3);
+  /* transform: skew(12deg); */
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.15);
+  margin-bottom: 44px;
+  font-size: 14px;
+}
+
+.vision {
+  background-color: rgba(209, 219, 209, 0.5);
+}
+
+.link,
+.link:link,
+.link:visited {
+  display: inline-block;
+
+  text-decoration: none;
+  font-size: 24px;
+  padding: 12px 24px;
+  border-radius: 5px;
+  color: var(--russianGreen);
+  /* background-color: #648767; */
+  transition: all 0.3s;
+  transform: scale(1.05);
+}
+
+.link:hover,
+.link:active {
+  background-color: #839f85;
+  transform: scale(1.13);
+  color: #333;
+}
+
+/***********************************************/
+/* FOOTER */
+/***********************************************/
+
+footer {
+  background-color: var(--silver);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  /* position: absolute; */
+  width: 100%;
+  /*Comment or uncomment following lines of code according to needs*/
+  bottom: 0;
+  margin-bottom: 0;
+}
+
+footer #contact_us_footer {
+  padding-left: 15px;
+  font-family: "Roboto Slab", serif;
+}
+
+footer #copyright_footer {
+  padding-right: 20px;
+  font-family: "Roboto Slab", serif;
+}

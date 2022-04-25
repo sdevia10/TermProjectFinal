@@ -1,0 +1,95 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toronto's Farm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="template_styles.css">
+    <style>
+        #success_container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 15%;
+            margin-top: 50px;
+            padding: 40px 10px;
+            background-color: rgba(106, 207, 59, 0.3);
+            border-radius: 20px;
+        }
+
+        #success_container h1 {
+            color: var(--mantisGreen);
+        }
+
+        #success_container img {
+            transform: scale(0);
+            animation: imgGrow 0.3s linear 0.2s 1 forwards;
+        }
+
+        @keyframes imgGrow {
+            0% {
+                transform: scale(0);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+        body {
+            background-color: #e2ece2;
+        }
+
+        footer
+            {
+            background-color: var(--silver);
+            display: flex;
+            justify-content: space-between;
+            /* align-items: center; */
+            padding: 20px 0;
+            position: absolute;
+            width: 100%;
+            /*Comment or uncomment following lines of code according to needs*/
+            bottom: 0;
+            margin-bottom: 0; 
+            }
+    </style>
+</head>
+
+<!-- START OF HTML BODY -->
+
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <img src="LOGO-round.png" alt="Logo">
+
+        <ul class="header-list">
+            <li> <a href="index.html">Home</a></li>
+        <li> <a href=about.html>About</a></li>
+        <li> <a href=products.html>Products</a></li>
+        <li> <a href=Shop.html>Shop</a></li>
+        <li> <a href=signin.html>Login</a></li>
+        </ul>
+    </div>
+
+    <!-- CODE FOR THE REST OF THE PAGES -->
+    <div id="success_container">
+        <img src="images/checked.png" alt="success-image" width="100px" />
+        <h1>Success</h1>
+        <p>Your message was delivered successfully to Toronto's Farm.</p>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div id="contact_us_footer"><a href="contact.html">Contact Us</a></div>
+        <div id="copyright_footer">&copy; Group E - Lambton College</div>
+    </footer>
+
+</html>

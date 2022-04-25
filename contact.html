@@ -1,0 +1,177 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toronto's Farm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="template_styles.css">
+    <style>
+        #contact_container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        #contact_container h1 {
+            color: var(--mantisGreen);
+            text-align: center;
+        }
+
+        #contact_container form {
+            width: 50%;
+            max-width: 500px;
+            padding: 30px;
+            border: 1px solid var(--lightCyan);
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px var(--mantisGreen);
+            background-color: white;
+        }
+
+
+        #contact_container label {
+            display: block;
+        }
+
+        #contact_container input {
+            height: 40px;
+        }
+
+
+        #contact_container input,
+        #contact_container textarea {
+            width: 100%;
+            border: 2px solid var(--silver);
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            outline: none;
+            border-radius: 5px;
+        }
+
+        #contact_container input[type=text]:focus,
+        #contact_container input[type=email]:focus,
+        #contact_container textarea:focus {
+            border-color: var(--mantisGreen);
+            box-shadow: 0 0 3px var(--mantisGreen);
+        }
+
+        #btn_container input {
+            margin-top: 5px;
+            cursor: pointer;
+            transition: 0.5s;
+            font-size: 14px;
+        }
+
+        #btn_container input:hover {
+            background-color: var(--mantisGreen);
+            border-color: var(--mantisGreen);
+        }
+
+        #underline {
+            margin-top: -10px;
+            height: 5px;
+            background-color: var(--mantisGreen);
+            animation: widthGrow 0.3s linear 0.2s 1 forwards;
+        }
+
+        @keyframes widthGrow {
+            0% {
+                width: 0%;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+
+        .flex_center {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        body {
+            background-color: #e2ece2;
+        }
+
+        footer
+{
+  background-color: var(--silver);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  position: absolute;
+  
+  /* margin-bottom: 0;
+  bottom: 0; */
+  margin-top: 200px;
+  width: 100%
+
+}
+@media (min-height:780px){
+  footer {
+  
+  margin-top: 0%;
+  margin-bottom: 0;
+  bottom: 0;
+  }
+} 
+    </style>
+</head>
+
+<!-- START OF HTML BODY -->
+
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <img src="LOGO-round.png" alt="Logo">
+
+        <ul class="header-list">
+            <li> <a href="index.html">Home</a></li>
+        <li> <a href=about.html>About</a></li>
+        <li> <a href=products.html>Products</a></li>
+        <li> <a href=Shop.html>Shop</a></li>
+        <li> <a href=signin.html>Login</a></li>
+        </ul>
+    </div>
+
+    <!-- CODE FOR THE REST OF THE PAGES -->
+    <div id="contact_container">
+        <form autocomplete="off" action="contact_success.html">
+            <div class="flex_center">
+                <h1>CONTACT</h1>
+                <div id="underline"></div>
+            </div>
+            <br />
+
+            <label for="email"><b>E-mail <span class="required">*</span></b></label>
+            <input type="email" required id="email" name="email" /><br /><br />
+
+            <label for="name"><b>Name </b></label>
+            <input type="text" id="name" name="name" /><br /><br />
+
+            <label for="message"><b>Message <span class="required">*</span></b></label>
+            <textarea id="message" required name="message" rows="5" cols="60"></textarea><br /><br />
+
+            <div id="btn_container">
+                <input type="submit" value="Submit"><br />
+                <input type="reset" value="Clear">
+            </div>
+        </form>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div id="contact_us_footer"><a href="contact.html">Contact Us</a></div>
+        <div id="copyright_footer">&copy; Group E - Lambton College</div>
+    </footer>
+
+</html>

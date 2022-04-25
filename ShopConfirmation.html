@@ -1,0 +1,158 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toronto's Farm</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="template_styles.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+	<style>
+		.shopconfpage{
+		  margin: 1%;
+		  /*Change properties of letters*/
+		  font-family: 'Roboto Slab', serif;
+		  font-weight: 500;		
+		} 
+		
+		table{
+		  
+		  border-collapse: collapse;
+		}
+		
+		th{
+		  background-color: #648767;
+		  color: white;
+		}	
+
+		.bg{
+	      opacity: .2;
+	      border-radius: 10px;
+	      margin-top: 10px;
+	      filter: brightness(65%);
+	    }
+		
+		.shopimg{
+		   position:relative;
+		   
+		}
+
+		.shopconf{
+		   display: inline-block;
+		   position: absolute;
+		   top: 1%;
+		   left: 1%;
+		   width:100%;
+		}		
+	
+	</style>
+	
+</head>
+
+
+
+<!-- START OF HTML BODY -->
+<body>
+  
+  <!-- HEADER -->
+  <header>
+    <div class="header">
+      <img src="LOGO-round.png" alt="Logo">
+
+      <ul class="header-list">
+		<li> <a href="index.html">Home</a></li>
+        <li> <a href=about.html>About</a></li>
+        <li> <a href=products.html>Products</a></li>
+        <li> <a href=Shop.html>Shop</a></li>
+        <li> <a href=signin.html>Login</a></li>
+      </ul>
+    </div>
+  </header>
+  
+	<!-- CODE FOR THE REST OF THE PAGES -->
+  <main>	
+	<section class="shopconfpage">
+	<div class="shopimg">
+        <img src="./images/vegBasket.jpg" alt="ShopImage" class="bg" style="width:100%; height:100%">
+		<div class="shopconf">
+		  <H2>Shopping with Toronto's Farm</H2>
+		  <p>Please confirm your purchase. If you want change any item, Cancel and return to shop webpage.</p>
+
+		  <center>
+
+		  <table border="2">
+			<thead>
+			<tr>
+				<th colspan='4' align='left'> <font color="#CEE7E6" size="5">Order #123456</font></th>
+			</tr>			
+			<tr>
+				<th> Product </th>
+				<th> Quantity </th>
+				<th> Unit Price </th>
+				<th> Total Price </th>
+			</tr>
+			</thead>
+
+			<tbody align='center'>
+			<tr>
+				<td align='left'>Acorn Squash</td>
+				<td>1</td>
+				<td>2.99</td>
+				<td>2.99</td>
+			</tr>
+			<tr>
+				<td align='left'>Broccoli</td>
+				<td>2</td>
+				<td>3.99</td>
+				<td>7.98</td>
+			</tr>			
+			<tr>
+				<td align='left'>Carrot</td>
+				<td>3</td>
+				<td>3.99</td>
+				<td>11.97</td>
+			</tr>		
+			<tr>
+				<td align='left'>Lettuce</td>
+				<td>1</td>
+				<td>2.99</td>
+				<td>2.99</td>
+			</tr>	
+				<td align='left'>Garlic</td>
+				<td>1</td>
+				<td>3.99</td>
+				<td>3.99</td>
+			</tr>	
+			</tbody>
+			
+			<tfoot>
+			</tr>	
+				<td colspan='3' align='right'>Total Purchase:</td>
+				<td align='center'>29.92</td>
+			</tr>	
+			</tfoot>
+	
+		  </table>
+		  <form>
+			<br>
+			<a href="ConsultOrders.html"><input type="button" value="Confirm"></input></a>
+			<a href="Shop.html"><input type="button" value="Cancel"></input></a>
+		  </form>
+		  </center>
+        </div>
+	</div>
+	</section>
+  </main>
+
+
+
+<!-- FOOTER -->
+<footer>
+	<div id="contact_us_footer"><a href="contact.html">Contact Us</a></div>
+ 	<div id="copyright_footer">&copy; Group E - Lambton College</div>
+</footer> 
+
+</html>

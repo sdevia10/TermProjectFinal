@@ -1,0 +1,133 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toronto's Farm</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="template_styles.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+	<style>
+		.consultpage{
+		  margin: 1%;
+		  /*Change properties of letters*/
+		  font-family: 'Roboto Slab', serif;
+		  font-weight: 500;		
+		} 
+		
+		table{
+		  
+		  border-collapse: collapse;
+		}
+		
+		th{
+		  background-color: #648767;
+		  color: white;
+		}	
+		
+		.bg{
+	      opacity: .2;
+	      border-radius: 10px;
+	      margin-top: 10px;
+	      filter: brightness(65%);
+	    }
+		
+		.shopimg{
+		   position:relative;
+		}
+
+		.consult{
+		   display: inline-block;
+		   position: absolute;
+		   top: 1%;
+		   left: 1%;
+		   width:100%;
+		}		
+
+		
+	</style>
+	
+</head>
+
+
+
+<!-- START OF HTML BODY -->
+<body>
+  
+  <!-- HEADER -->
+  <header>
+    <div class="header">
+      <img src="LOGO-round.png" alt="Logo">
+
+      <ul class="header-list">
+        <li> <a href="index.html">Home</a></li>
+        <li> <a href=about.html>About</a></li>
+        <li> <a href=products.html>Products</a></li>
+        <li> <a href=Shop.html>Shop</a></li>
+        <li> <a href=signin.html>Login</a></li>
+      </ul>
+    </div>
+  </header>
+
+	<!-- CODE FOR THE REST OF THE PAGES -->
+  <main>	
+	<section class="consultpage">
+      <div class="shopimg">
+        <img src="./images/vegBasket.jpg" class="bg" alt="ShopImage" style="width:100%; height:100%">
+		<div class="consult">	
+
+		<H2>Shopping with Toronto's Farm</H2>
+		<p>Here is the list of the purchases you have done</p>
+
+		<center>
+
+		<table border="2">
+			<thead align='center'>
+			<tr>
+				<th>Order Nº</th>
+				<th>Date</th>
+				<th>Value</th>
+				<th>Status</th>
+			</tr>
+			</thead>
+
+			<tbody align='center'>
+			<tr>
+				<td>123456</td>
+				<td>2022-03-31</td>
+				<td>CAD 30.00</td>
+				<td>Placed</td>
+			</tr>
+			<tr>
+				<td>123488</td>
+				<td>2022-03-14</td>
+				<td>CAD 48.00</td>
+				<td>Picked-up</td>
+			</tr>			
+			<tr>
+				<td>123344</td>
+				<td>2022-02-20</td>
+				<td>CAD 12.50</td>
+				<td>Picked-up</td>
+			</tr>		
+			</tbody>	
+		</table>
+
+		</center>
+        </div>
+	  </div>
+    </section>
+  </main>
+
+
+<!-- FOOTER -->
+<footer>
+	<div id="contact_us_footer"><a href="contact.html">Contact Us</a></div>
+ <div id="copyright_footer">&copy; Group E - Lambton College</div>
+</footer> 
+
+</html>
