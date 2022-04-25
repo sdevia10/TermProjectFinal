@@ -48,6 +48,13 @@
 		   width:100%;
 		}		
 	
+		.myButton
+		{
+			background-color: #648767;
+			border-radius: 4px; color: white; 
+			border:none;
+		}
+
 	</style>
 	
 </head>
@@ -89,13 +96,13 @@
 				<th colspan='4' align='left'> <font color="#CEE7E6" size="5">Order #123456</font></th>
 			</tr>			
 			<tr>
-				<th> Product </th>
-				<th> Quantity </th>
-				<th> Unit Price </th>
-				<th> Total Price </th>
+				<th style="padding: 15px;"> Product </th>
+				<th style="padding: 15px;"> Quantity </th>
+				<th style="padding: 15px;"> Unit Price </th>
+				<th style="padding: 15px;"> Total Price </th>
 			</tr>
 			</thead>
-
+			<br>
 			<tbody align='center'>
 			<tr>
 				<td align='left'>Acorn Squash</td>
@@ -130,16 +137,16 @@
 			
 			<tfoot>
 			</tr>	
-				<td colspan='3' align='right'>Total Purchase:</td>
-				<td align='center'>29.92</td>
+				<td colspan='3' style="text-align: center;"> <strong>Total Purchase:</strong> </td>
+				<td style="text-align: center;"> <strong>29.92</strong> </td>
 			</tr>	
 			</tfoot>
 	
 		  </table>
 		  <form>
 			<br>
-			<a href="ConsultOrders.html"><input type="button" value="Confirm"></input></a>
-			<a href="Shop.html"><input type="button" value="Cancel"></input></a>
+			<a href="ConsultOrders.html"><input type="button" class="myButton" value="Confirm"></input></a>
+			<a href="Shop.html"><input type="button" class="myButton" value="Cancel"></input></a>
 		  </form>
 		  </center>
         </div>
